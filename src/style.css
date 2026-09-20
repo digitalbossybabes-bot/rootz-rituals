@@ -12,15 +12,15 @@ a{color:inherit;text-decoration:none} button,a{ -webkit-tap-highlight-color:tran
 .nav-links a:hover{color:var(--gold2)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid var(--gold);letter-spacing:.11em;text-transform:uppercase;font-weight:700;font-size:.72rem;transition:.22s;background:transparent}
 .btn:hover{background:var(--gold);color:#090908}.btn.fill{background:var(--gold);color:#090908}.btn.fill:hover{background:var(--gold2)}
-.hero{min-height:760px;display:grid;place-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-.hero:before{content:"";position:absolute;inset:-15%;background:radial-gradient(circle at 66% 30%,rgba(198,164,92,.16),transparent 27%),radial-gradient(circle at 22% 70%,rgba(86,45,68,.22),transparent 31%),linear-gradient(120deg,#080807,#0e0d0b 48%,#090908);}
-.stars{position:absolute;inset:0;opacity:.68;background-image:radial-gradient(#e3cb91 0.65px,transparent .7px);background-size:31px 31px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
-.orbit{position:absolute;width:520px;height:520px;border:1px solid rgba(198,164,92,.2);border-radius:50%;right:-130px;top:120px}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(198,164,92,.15);border-radius:50%;inset:70px}.orbit:after{inset:150px}
-.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;padding:100px 0 80px}
+.hero{min-height:760px;display:grid;place-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background-image:linear-gradient(90deg,rgba(6,5,4,.42),rgba(6,5,4,.05)),url("../rootz-rituals-hero.webp");background-size:cover;background-position:center top;background-repeat:no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,6,5,.58) 0%,rgba(7,6,5,.24) 42%,rgba(7,6,5,.04) 70%);}
+.stars{display:none;position:absolute;inset:0;opacity:.68;background-image:radial-gradient(#e3cb91 0.65px,transparent .7px);background-size:31px 31px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+.orbit{display:none;position:absolute;width:520px;height:520px;border:1px solid rgba(198,164,92,.2);border-radius:50%;right:-130px;top:120px}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(198,164,92,.15);border-radius:50%;inset:70px}.orbit:after{inset:150px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;padding:100px 0 80px}
 .eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;font-weight:800;margin-bottom:20px}
 h1{font-size:clamp(3.4rem,8vw,7.7rem);line-height:.88;font-weight:400;margin:0 0 26px;letter-spacing:-.055em}
 .lead{max-width:690px;color:#d2c7b5;font-size:1.08rem;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:35px}
-.sigil{width:min(360px,80vw);aspect-ratio:1;border:1px solid rgba(198,164,92,.28);border-radius:50%;margin:auto;position:relative;display:grid;place-items:center;box-shadow:0 0 80px rgba(198,164,92,.08) inset}
+.sigil{display:none;width:min(360px,80vw);aspect-ratio:1;border:1px solid rgba(198,164,92,.28);border-radius:50%;margin:auto;position:relative;display:grid;place-items:center;box-shadow:0 0 80px rgba(198,164,92,.08) inset}
 .sigil:before{content:"☾";font-family:Georgia,serif;font-size:9rem;color:var(--gold);filter:drop-shadow(0 0 22px rgba(198,164,92,.24));transform:rotate(-12deg)}
 .sigil:after{content:"AS WITHIN · SO WITHOUT ·";position:absolute;inset:25px;border:1px dashed rgba(198,164,92,.35);border-radius:50%;display:grid;place-items:end center;padding:32px;color:#bba369;font-size:.62rem;letter-spacing:.23em}
 .ticker{border-bottom:1px solid var(--line);padding:16px 0;white-space:nowrap;overflow:hidden;color:#bda76e;letter-spacing:.18em;font-size:.68rem;text-transform:uppercase}
