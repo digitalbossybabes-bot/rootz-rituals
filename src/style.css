@@ -40,3 +40,16 @@ section{padding:105px 0;border-bottom:1px solid var(--line)}
 footer{padding:44px 0 55px}.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.foot-nav{display:flex;gap:22px;flex-wrap:wrap;color:#aa9c87;font-size:.78rem}.copyright{color:#756c5d;font-size:.73rem;margin-top:12px}
 @media(max-width:860px){.nav-links{display:none}.hero{min-height:auto}.hero-grid,.section-head,.ritual,.guidance{grid-template-columns:1fr}.hero-grid{padding:82px 0 65px;gap:55px}.sigil{width:280px}.doorways,.products{grid-template-columns:1fr 1fr}.door:nth-child(2){border-right:0}.door:nth-child(3){border-top:1px solid var(--line)}.ritual{gap:42px}.altar{min-height:440px}.foot{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.wrap{width:min(100% - 24px,1180px)}.nav-inner{height:66px}.brand{font-size:.77rem}.btn{width:100%}.hero-actions{flex-direction:column}.doorways,.products{grid-template-columns:1fr}.door{border-right:0;border-bottom:1px solid var(--line);min-height:275px}.door:last-child{border-bottom:0}.door:nth-child(3){border-top:0}.num{margin-bottom:42px}.section-head{gap:18px}.products{gap:10px}.altar{min-height:380px}.bottles{gap:14px}.bottle{width:48px;height:127px}.bottle:nth-child(2){height:160px;width:55px}.guidance{gap:10px}section{padding:78px 0}}
+
+/* Approved hero artwork: render intact, with no duplicated UI layered over it. */
+.approved-hero{position:relative;width:100%;background:#090908;overflow:hidden}
+.approved-hero img{display:block;width:100%;height:auto;object-fit:contain}
+.hero-hotspot{position:absolute;display:block;z-index:3}
+.hero-shop{left:4%;top:31%;width:16%;height:9%}
+.hero-reading{right:4%;top:3%;width:13%;height:6%}
+@media(max-width:760px){
+  .approved-hero{overflow-x:hidden}
+  .approved-hero img{width:100%;height:auto;object-fit:contain}
+  .hero-shop{left:3%;top:30%;width:24%;height:10%}
+  .hero-reading{right:2%;top:2%;width:24%;height:8%}
+}
